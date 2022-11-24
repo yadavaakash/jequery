@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="jquery-3.6.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("button").click(function(){
+            var value = $("#name").val();
+           //alert(value);
+            alert(parseInt(value) + parseInt(value));
+        });
+      });
+    </script>
+</head>
+
+<body>
+    <form>
+        Name:<input type="text" id="name">
+    </form> <br>
+    <button>Click Me</button>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="jquery-3.6.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".btn-one").click(function () {
+                var str = $("p").text();
+                alert(str);
+            });
+            $(".btn-two").click(function () {
+                var str = $("p:first").text();
+                alert(str);
+            });
+            $(".btn-three").click(function () {
+                var str = $("p.extra").text();
+                alert(str);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button class="btn-one">Get All Text</button>
+    <button class="btn-two">Get First Text</button>
+    <button class="btn-three">Get Last Text</button>
+    <p style="background : red;">This is a paragraph.</p>
+    <p style="background : blue;">This is another paragraph.</p>
+    <p class="extra" style="background : green;">This is one more paragraph.</p>
+</body>
+
+</html>
